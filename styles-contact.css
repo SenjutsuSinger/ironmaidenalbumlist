@@ -103,6 +103,13 @@ h2 {  font-family: "Metal Mania", sans-serif;
     color: #000000;
   }
 
+  h3 {  font-family: "Metal Mania", sans-serif;
+  font-weight: 400;
+  font-style: normal; font-size: 1.2em;
+  margin: 0px auto 10px auto;
+    color: #000000;
+}
+
 p {
   font-family: "Rye", serif;
   font-weight: 400;
@@ -111,7 +118,7 @@ p {
 }
 
 nav{
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Metal Mania', sans-serif;
   font-size: 1.2em;
   width: 400px;
   margin: 0 auto;
@@ -133,12 +140,72 @@ nav a{
 a{color: #444;
 text-decoration: none;
 font-weight: bold;
+font-family: "Metal Mania", sans-serif;
 }
 
 a:hover{
   color: #000000;
   background: rgba(134, 134, 134, 0.767);
 }
-    
-    
 
+@mixin clearfix {
+&:after {
+display: table;
+clear: both;
+}
+}
+html {
+box-sizing: border-box;
+}
+*, *:before, *:after {
+box-sizing: inherit;
+}
+
+body {
+background-color: steelblue;
+min-height: 100%;
+}
+
+a {
+text-decoration: none;
+color: inherit
+}
+
+.main-header {
+background-color: #ffffff70;
+padding: 5px 40px 10px 20px;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+@media (min-width: 1025px) {
+.main-header {
+flex-direction: row;
+justify-content: space-between;
+}
+}
+
+.name {
+color: white;
+font-size: 1.35em;
+margin: 0;
+}
+a {
+text-align: center;
+display: block;
+padding: 10px 15px;
+}
+
+.main-nav {
+margin: 0;
+list-style-type: none;
+display: flex;
+}
+a {
+text-align: center;
+display: inline-block;
+padding: 10px 15px;
+font-size: .95em;
+color: #000000;
+text-transform: uppercase;
+}
