@@ -209,3 +209,7 @@ font-size: .95em;
 color: #000000;
 text-transform: uppercase;
 }
+
+.thispage {
+  background-color: rgba(134, 134, 134, 0.767);
+}
