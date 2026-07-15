@@ -145,7 +145,7 @@ font-family: "Metal Mania", sans-serif;
 
 a:hover{
   color: #000000;
-  background: rgba(134, 134, 134, 0.767);
+  background: rgba(134, 134, 134, 0.411);
 }
 
 @mixin clearfix {
